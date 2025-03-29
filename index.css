@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Caprasimo&family=Caveat&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Playwrite+IN&family=Rubik+Vinyl&family=Rubik+Wet+Paint&family=Varela+Round&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #EBEBEB;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container>h1{
+    font-size:30px;
+    font-family:"Playwrite IN", serif;
+    font-weight: 400;
+}
+.inp{
+    width: 50%;
+    height:40px;
+    background-color: #EBEBEB;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+.inp>input{
+    height:90%;
+    width: 60%;
+    letter-spacing: 2px;
+    padding-inline: 10px;
+    background: transparent;
+    font-size: 15px;
+    border: none;
+    outline: none;
+}
+.inp>button{
+    height: inherit;
+    padding-inline:10px;
+    background: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.inp>button>i{
+    font-size: 15px;
+}
+.box{
+    width:50%;
+    height: fit-content;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 10px;
+    background-color: #FF4242;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.detail{
+    display: flex;
+    font-family: "Varela Round", serif;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+}
+.detail h2{
+    font-size: 25px;
+}
+.image{
+    width:150px;
+}
+.image>img{
+    width: inherit;
+}
+.footer{
+    width:300px;
+    padding: 5px 10px;
+    display: grid;
+    grid-template-columns:50% 50%;
+}
+.gri{
+    margin: 7px;
+    border: 2px dashed white;
+    backdrop-filter:blur(10px);
+    padding: 5px 10px;
+}
+.gri>.tit{
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+.gri>.val{
+    margin-left: 5px;
+}
+.detail>.icon{
+    font-size: 40px;
+}
+.detail>.warn{
+    font-size: 20px;
+    font-weight:300;
+    border-bottom: 3px solid white;
+}
+.first{
+    font-size: 20px;
+    font-weight: 600;
+}
+@media screen and (max-width: 720px) {
+    .container{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .box{
+        width: 90%;
+    }
+    .inp{
+        width: 85%;
+    }
+  }
