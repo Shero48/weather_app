@@ -2,7 +2,7 @@ let city = document.getElementById("text");
 let detail = document.getElementsByClassName("detail");
 let area;
 let load = false;
-let api='882beb5504ce948603bb8685a904c552';
+let api='weather-api_key';
 const clear = "./image/sun.png";
 const snow = "./image/snow.png";
 const rain = "./image/rain.png";
